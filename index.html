@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en" data-crt="true">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anushka Tiwari | AI & ML Engineer | 80s Retro Cyber Portfolio</title>
+  <meta name="description" content="Official portfolio of Anushka Tiwari - AI & ML Undergraduate, Data Analytics & Cloud Specialist. Showcasing Python internship projects, GitHub repositories, and AI solutions with an 80s retro synthwave aesthetic.">
+  <meta name="keywords" content="Anushka Tiwari, AI ML Engineer, Python Developer, Data Science, Oasis Infobyte, Prodigy InfoTech, 80s Synthwave Portfolio, Retro Cyberpunk">
+  <meta name="author" content="Anushka Tiwari">
+
+  <!-- Google Fonts: 80s Retro & Clean Futuristic Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;700;800&family=Orbitron:wght@500;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for Retro Badges -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- PWA & Mobile App Support -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff2a85">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-active">
+  <!-- CRT Scanlines & Screen Vignette Overlay -->
+  <div class="crt-overlay" id="crtOverlay"></div>
+  <div class="crt-flicker"></div>
+
+  <!-- Background Synthwave Horizon Canvas -->
+  <canvas id="synthwaveCanvas" class="synthwave-canvas"></canvas>
+
+  <!-- 80s HUD Status Bar & Quick Control Dock -->
+  <header class="retro-header">
+    <div class="hud-container">
+      <div class="hud-left">
+        <span class="hud-badge pulse-neon"><i class="fa-solid fa-satellite-dish"></i> SYS://ONLINE_</span>
+        <span class="hud-terminal-tag font-mono">ANUSHKA_OS v1986.8</span>
+      </div>
+
+      <nav class="hud-nav" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active font-orbitron" data-sound="hover"><i class="fa-solid fa-home"></i> HUB</a>
+        <a href="#about" class="nav-link font-orbitron" data-sound="hover"><i class="fa-solid fa-user-astronaut"></i> BIO</a>
+        <a href="#experience" class="nav-link font-orbitron" data-sound="hover"><i class="fa-solid fa-briefcase"></i> INTERNSHIPS</a>
+        <a href="#projects" class="nav-link font-orbitron" data-sound="hover"><i class="fa-solid fa-microchip"></i> PROJECTS</a>
+        <a href="#github-repos" class="nav-link font-orbitron" data-sound="hover"><i class="fa-brands fa-github"></i> GITHUB</a>
+        <a href="#skills" class="nav-link font-orbitron" data-sound="hover"><i class="fa-solid fa-bolt"></i> SKILLS</a>
+        <a href="#certifications" class="nav-link font-orbitron" data-sound="hover"><i class="fa-solid fa-award"></i> CREDS</a>
+        <a href="#contact" class="nav-link font-orbitron" data-sound="hover"><i class="fa-solid fa-terminal"></i> COMMS</a>
+      </nav>
+
+      <div class="hud-controls">
+        <button id="sfxToggleBtn" class="hud-btn" title="Toggle 8-bit Sound FX" aria-label="Toggle Sound Effects">
+          <i class="fa-solid fa-volume-high" id="sfxIcon"></i> <span class="btn-text">SFX: ON</span>
+        </button>
+        <button id="crtToggleBtn" class="hud-btn" title="Toggle 80s CRT Screen Effects" aria-label="Toggle CRT Filter">
+          <i class="fa-solid fa-tv" id="crtIcon"></i> <span class="btn-text">CRT: ON</span>
+        </button>
+        <button id="quickTerminalBtn" class="hud-btn hud-btn-neon" title="Open Interactive Retro Terminal">
+          <i class="fa-solid fa-code"></i> CLI
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main HUD Layout Wrapper -->
+  <main class="main-wrapper">
+    
+    <!-- ==================== HERO / HUD DASHBOARD ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bento">
+        
+        <!-- Left: Profile & Hologram Card -->
+        <div class="hero-card hero-profile-card">
+          <div class="card-corner corner-tl"></div>
+          <div class="card-corner corner-tr"></div>
+          <div class="card-corner corner-bl"></div>
+          <div class="card-corner corner-br"></div>
+          
+          <div class="profile-header">
+            <div class="avatar-radar-wrapper">
+              <div class="avatar-scanner"></div>
+              <div class="avatar-frame">
+                <div class="avatar-synth-graphic">
+                  <i class="fa-solid fa-robot avatar-icon"></i>
+                  <span class="avatar-initials font-orbitron">AT</span>
+                </div>
+              </div>
+              <div class="radar-ping"></div>
+            </div>
+            
+            <div class="profile-meta">
+              <div class="meta-tag font-mono"><i class="fa-solid fa-location-dot"></i> LUCKNOW, UP, INDIA</div>
+              <h1 class="glitch-title font-orbitron" data-text="ANUSHKA TIWARI">ANUSHKA TIWARI</h1>
+              <div class="typing-container font-mono">
+                <span class="typing-prefix">&gt; </span><span id="typedText" class="typing-text">AI & ML Undergraduate</span><span class="typing-cursor">█</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="profile-pitch font-mono">
+            B.Tech (AI & ML) scholar specializing in <strong class="highlight-cyan">Python</strong>, <strong class="highlight-pink">Data Analytics</strong>, <strong class="highlight-yellow">Cloud AI</strong>, and <strong class="highlight-cyan">Generative AI</strong>. Passionate about engineering intelligent algorithmic pipelines and real-world software solutions.
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="retro-btn btn-magenta font-orbitron" data-sound="click">
+              <i class="fa-solid fa-gamepad"></i> EXPLORE PROJECTS
+            </a>
+            <button id="openResumeModalBtn" class="retro-btn btn-cyan font-orbitron" data-sound="click">
+              <i class="fa-solid fa-file-invoice"></i> VIEW RESUME
+            </button>
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer" class="retro-btn btn-purple font-orbitron" data-sound="click">
+              <i class="fa-brands fa-github"></i> GITHUB REPOS
+            </a>
+          </div>
+
+          <!-- Social Quick Matrix -->
+          <div class="social-matrix font-mono">
+            <a href="mailto:tiwarianushka242@gmail.com" class="social-chip" title="Direct Email" data-sound="hover">
+              <i class="fa-solid fa-envelope"></i> <span>tiwarianushka242@gmail.com</span>
+            </a>
+            <a href="https://leetcode.com/u/9696anusHka-23" target="_blank" rel="noopener noreferrer" class="social-chip" title="LeetCode Profile" data-sound="hover">
+              <i class="fa-solid fa-code"></i> <span>LeetCode: 9696anusHka-23</span>
+            </a>
+            <a href="https://hackerrank.com/profile/tiwarianushka242" target="_blank" rel="noopener noreferrer" class="social-chip" title="HackerRank Profile" data-sound="hover">
+              <i class="fa-brands fa-hackerrank"></i> <span>HackerRank: tiwarianushka242</span>
+            </a>
+            <a href="tel:+919696489045" class="social-chip" title="Phone" data-sound="hover">
+              <i class="fa-solid fa-phone"></i> <span>+91 9696489045</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Stats & Mini HUD Monitor -->
+        <div class="hero-card hero-stats-card">
+          <div class="hud-monitor-header">
+            <span class="monitor-dots"><i></i><i></i><i></i></span>
+            <span class="monitor-title font-orbitron">SYSTEM METRICS // LEVEL 80s</span>
+            <span class="monitor-badge font-mono">FREQ: 120Hz</span>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box" data-sound="hover">
+              <div class="stat-icon magenta"><i class="fa-solid fa-brain"></i></div>
+              <div class="stat-num font-orbitron" data-target="4">0</div>
+              <div class="stat-lbl font-mono">Python Internship Demos</div>
+            </div>
+
+            <div class="stat-box" data-sound="hover">
+              <div class="stat-icon cyan"><i class="fa-brands fa-github-alt"></i></div>
+              <div class="stat-num font-orbitron" data-target="9">0</div>
+              <div class="stat-lbl font-mono">GitHub Repositories</div>
+            </div>
+
+            <div class="stat-box" data-sound="hover">
+              <div class="stat-icon yellow"><i class="fa-solid fa-certificate"></i></div>
+              <div class="stat-num font-orbitron" data-target="8">0</div>
+              <div class="stat-lbl font-mono">Industry Certifications</div>
+            </div>
+
+            <div class="stat-box" data-sound="hover">
+              <div class="stat-icon purple"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="stat-num font-orbitron" data-target="2">0</div>
+              <div class="stat-lbl font-mono">Cadet Wings (NCC & NSS)</div>
+            </div>
+          </div>
+
+          <!-- Mini Synthwave Audio Visualizer -->
+          <div class="synth-eq-container">
+            <div class="eq-label font-mono"><i class="fa-solid fa-wave-square"></i> AUDIO SYNTH SPECTRUM ANALYZER</div>
+            <div class="eq-bars">
+              <span class="eq-bar" style="--h: 65%;"></span>
+              <span class="eq-bar" style="--h: 90%;"></span>
+              <span class="eq-bar" style="--h: 45%;"></span>
+              <span class="eq-bar" style="--h: 80%;"></span>
+              <span class="eq-bar" style="--h: 100%;"></span>
+              <span class="eq-bar" style="--h: 70%;"></span>
+              <span class="eq-bar" style="--h: 85%;"></span>
+              <span class="eq-bar" style="--h: 50%;"></span>
+              <span class="eq-bar" style="--h: 95%;"></span>
+              <span class="eq-bar" style="--h: 75%;"></span>
+              <span class="eq-bar" style="--h: 60%;"></span>
+              <span class="eq-bar" style="--h: 90%;"></span>
+            </div>
+          </div>
+
+          <!-- Academic Badge Bar -->
+          <div class="academic-badge font-mono">
+            <i class="fa-solid fa-graduation-cap highlight-yellow"></i>
+            <span><strong>B.Tech AI & ML (2024–2028)</strong> · Ambalika Institute of Mgmt & Tech (AKTU)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== ABOUT & CAREER SECTION ==================== -->
+    <section id="about" class="section-block">
+      <div class="section-heading">
+        <span class="section-sub font-mono">// BIO & DIRECTORY</span>
+        <h2 class="section-title font-orbitron"><i class="fa-solid fa-id-card-clip highlight-magenta"></i> OPERATOR PROFILE</h2>
+      </div>
+
+      <div class="bento-2col">
+        <!-- Education Card -->
+        <div class="retro-card">
+          <div class="card-header font-orbitron">
+            <i class="fa-solid fa-school-flag highlight-cyan"></i> ACADEMIC PATHWAY
+          </div>
+          <div class="timeline-compact font-mono">
+            <div class="timeline-step">
+              <div class="timeline-dot dot-cyan"></div>
+              <div class="step-content">
+                <span class="step-year">2024 – 2028 (Present)</span>
+                <h4 class="step-title">B.Tech in Artificial Intelligence & Machine Learning</h4>
+                <p class="step-place">Ambalika Institute of Management & Technology, AKTU University</p>
+                <div class="tag-row">
+                  <span class="chip">Data Analytics</span>
+                  <span class="chip">Machine Learning</span>
+                  <span class="chip">Cloud AI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-dot dot-pink"></div>
+              <div class="step-content">
+                <span class="step-year">2023</span>
+                <h4 class="step-title">Class XII (Senior Secondary) - CBSE</h4>
+                <p class="step-place">Gandhi Memorial School, Varanasi</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-dot dot-yellow"></div>
+              <div class="step-content">
+                <span class="step-year">2021</span>
+                <h4 class="step-title">Class X (Secondary) - CBSE</h4>
+                <p class="step-place">St. Joseph's High School</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership, Strengths & Objective Card -->
+        <div class="retro-card">
+          <div class="card-header font-orbitron">
+            <i class="fa-solid fa-chess-knight highlight-yellow"></i> LEADERSHIP & CORE MATRIX
+          </div>
+          <div class="content-body font-mono">
+            <div class="focus-group">
+              <h4 class="focus-label"><i class="fa-solid fa-flag-checkered highlight-pink"></i> LEADERSHIP & CIVIC ENGAGEMENT</h4>
+              <div class="badge-pill-container">
+                <span class="badge-pill pill-gold"><i class="fa-solid fa-award"></i> National Cadet Corps (NCC)</span>
+                <span class="badge-pill pill-cyan"><i class="fa-solid fa-hands-holding-circle"></i> National Service Scheme (NSS)</span>
+              </div>
+              <p class="focus-desc">Active contributor in disciplined leadership squads, social service initiatives, teamwork, and high-impact public communication.</p>
+            </div>
+
+            <div class="focus-group">
+              <h4 class="focus-label"><i class="fa-solid fa-compass-drafting highlight-cyan"></i> KEY STRENGTHS</h4>
+              <div class="strengths-tags">
+                <span class="st-tag">Analytical Thinking</span>
+                <span class="st-tag">Fast Learner</span>
+                <span class="st-tag">Agile Adaptability</span>
+                <span class="st-tag">Attention to Detail</span>
+                <span class="st-tag">Team Collaboration</span>
+                <span class="st-tag">Strategic Leadership</span>
+              </div>
+            </div>
+
+            <div class="focus-group">
+              <h4 class="focus-label"><i class="fa-solid fa-bullseye highlight-magenta"></i> CAREER TRAJECTORY</h4>
+              <p class="objective-quote">
+                "Seeking high-growth internships and developer roles in AI/ML, Data Analytics, Data Science, and Software Development to architect data-driven solutions alongside industry pioneers."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== INTERNSHIPS & FELLOWSHIPS ==================== -->
+    <section id="experience" class="section-block">
+      <div class="section-heading">
+        <span class="section-sub font-mono">// INDUSTRY CREDENTIALS</span>
+        <h2 class="section-title font-orbitron"><i class="fa-solid fa-briefcase highlight-cyan"></i> PROFESSIONAL INTERNSHIPS</h2>
+      </div>
+
+      <div class="internship-grid">
+        <!-- Oasis Infobyte -->
+        <div class="internship-card oasis-card">
+          <div class="card-corner corner-tl"></div>
+          <div class="card-corner corner-tr"></div>
+          <div class="card-corner corner-bl"></div>
+          <div class="card-corner corner-br"></div>
+          
+          <div class="intern-header">
+            <div class="org-icon-frame oasis-theme">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="org-details">
+              <div class="org-type font-mono">OFFICIAL FELLOWSHIP · REF: OIB/T2/IP3403</div>
+              <h3 class="org-name font-orbitron">OASIS INFOBYTE</h3>
+              <div class="org-role font-mono">Python Programming Intern</div>
+            </div>
+            <div class="duration-badge font-mono">
+              <i class="fa-regular fa-calendar-check"></i> AUG 2026
+            </div>
+          </div>
+
+          <div class="intern-body font-mono">
+            <p class="intern-summary">
+              Engaged in hands-on software development engineering four major standalone Python tools spanning text-to-speech AI assistants, healthcare computing engines, cryptographic password generators, and real-time REST API weather tools.
+            </p>
+            
+            <div class="task-deliverables">
+              <h4 class="task-title font-orbitron"><i class="fa-solid fa-list-check highlight-cyan"></i> CORE TASK DELIVERABLES</h4>
+              <ul class="task-list">
+                <li><i class="fa-solid fa-check highlight-cyan"></i> <strong>Task 1 · Voice Assistant:</strong> Voice recognition with <code>speech_recognition</code> & <code>pyttsx3</code> with automated intent execution.</li>
+                <li><i class="fa-solid fa-check highlight-cyan"></i> <strong>Task 2 · BMI Calculator:</strong> Health matrix computing with GUI, color alerts, SQLite data storage & Matplotlib trend graphs.</li>
+                <li><i class="fa-solid fa-check highlight-cyan"></i> <strong>Task 3 · Random Password Generator:</strong> Cryptographically secure entropy engine utilizing Python <code>secrets</code> & clipboard sync.</li>
+                <li><i class="fa-solid fa-check highlight-cyan"></i> <strong>Task 4 · Weather Application:</strong> Multi-city live weather radar with OpenWeather API parsing & forecast visualizations.</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">pyttsx3</span>
+              <span class="tech-badge">SpeechRecognition</span>
+              <span class="tech-badge">Tkinter</span>
+              <span class="tech-badge">Matplotlib</span>
+              <span class="tech-badge">SQLite3</span>
+              <span class="tech-badge">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prodigy InfoTech -->
+        <div class="internship-card prodigy-card">
+          <div class="card-corner corner-tl"></div>
+          <div class="card-corner corner-tr"></div>
+          <div class="card-corner corner-bl"></div>
+          <div class="card-corner corner-br"></div>
+          
+          <div class="intern-header">
+            <div class="org-icon-frame prodigy-theme">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="org-details">
+              <div class="org-type font-mono">OFFICIAL INTERNSHIP · CIN: PIT/AUG26/01174</div>
+              <h3 class="org-name font-orbitron">PRODIGY INFOTECH</h3>
+              <div class="org-role font-mono">Data Science Intern</div>
+            </div>
+            <div class="duration-badge font-mono">
+              <i class="fa-regular fa-calendar-check"></i> AUG 2026
+            </div>
+          </div>
+
+          <div class="intern-body font-mono">
+            <p class="intern-summary">
+              Executed comprehensive real-world Data Science and Machine Learning pipelines: exploratory data analysis (EDA), data cleaning, statistical modeling, feature selection, and predictive algorithm training.
+            </p>
+
+            <div class="task-deliverables">
+              <h4 class="task-title font-orbitron"><i class="fa-solid fa-chart-pie highlight-pink"></i> CORE ACCOMPLISHMENTS</h4>
+              <ul class="task-list">
+                <li><i class="fa-solid fa-check highlight-pink"></i> <strong>Exploratory Data Analysis:</strong> Processed multi-dimensional datasets with Pandas and Seaborn for pattern discovery.</li>
+                <li><i class="fa-solid fa-check highlight-pink"></i> <strong>Machine Learning Workflows:</strong> Implemented regression, clustering, and classification models with Scikit-learn.</li>
+                <li><i class="fa-solid fa-check highlight-pink"></i> <strong>Data Visualization:</strong> Built communicative visual dashboards translating complex metrics into actionable insights.</li>
+              </ul>
+            </div>
+
+            <div class="tech-stack-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Scikit-Learn</span>
+              <span class="tech-badge">Seaborn</span>
+              <span class="tech-badge">Data Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== INTERACTIVE PROJECTS HUB ==================== -->
+    <section id="projects" class="section-block">
+      <div class="section-heading">
+        <div class="heading-flex">
+          <div>
+            <span class="section-sub font-mono">// TASK SUITE & INTERACTIVE SIMULATORS</span>
+            <h2 class="section-title font-orbitron"><i class="fa-solid fa-gamepad highlight-pink"></i> PYTHON INTERNSHIP PROJECTS</h2>
+          </div>
+          <div class="filter-pills font-mono" id="projectFilterGroup">
+            <button class="filter-btn active" data-filter="all">ALL (4)</button>
+            <button class="filter-btn" data-filter="ai">AI / VOICE</button>
+            <button class="filter-btn" data-filter="gui">GUI & ANALYTICS</button>
+            <button class="filter-btn" data-filter="security">SECURITY</button>
+            <button class="filter-btn" data-filter="api">API / CLOUD</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: Voice Assistant -->
+        <div class="project-bento-card" data-category="ai">
+          <div class="card-accent-bar magenta"></div>
+          <div class="project-card-header">
+            <div class="badge-row font-mono">
+              <span class="badge-tag">TASK 1</span>
+              <span class="badge-tier">BEGINNER & ADVANCED</span>
+            </div>
+            <h3 class="project-title font-orbitron">SynthVoice AI Assistant</h3>
+            <p class="project-desc font-mono">
+              Voice-driven desktop assistant with speech recognition, text-to-speech synthesization, dynamic command parsing, web automation, time/date feedback, and live weather triggers.
+            </p>
+          </div>
+
+          <div class="feature-checklist font-mono">
+            <div class="check-col">
+              <div class="check-header">Beginner Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Speech microphone input</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> pyttsx3 voice engine</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Web search automation</div>
+            </div>
+            <div class="check-col">
+              <div class="check-header">Advanced Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> NLP intent processing</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Timed audible reminders</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Weather API live readout</div>
+            </div>
+          </div>
+
+          <!-- Interactive Simulator Container -->
+          <div class="interactive-simulator">
+            <div class="sim-header font-mono">
+              <span><i class="fa-solid fa-terminal"></i> LIVE SIMULATOR · VOICE ENGINE</span>
+              <span class="sim-status" id="voiceStatus">READY</span>
+            </div>
+            <div class="sim-body">
+              <div class="voice-screen font-mono" id="voiceAssistantLog">
+                <div class="log-line sys">&gt; SynthVoice AI v2.4 initialized. Ready for query.</div>
+                <div class="log-line bot">&gt; Hello Anushka! Click a quick command or type below.</div>
+              </div>
+              <div class="voice-quick-cmds font-mono">
+                <button class="voice-cmd-chip" data-cmd="What is the current time and date?">🕒 Time & Date</button>
+                <button class="voice-cmd-chip" data-cmd="Search web for Python AI tutorials">🔍 Search Python AI</button>
+                <button class="voice-cmd-chip" data-cmd="What is the weather in Lucknow?">🌤️ Weather Lucknow</button>
+                <button class="voice-cmd-chip" data-cmd="Hello SynthVoice assistant">👋 Greeting</button>
+              </div>
+              <div class="voice-input-row">
+                <input type="text" id="voiceInput" class="retro-input font-mono" placeholder="Type or click command... e.g., 'What time is it?'">
+                <button id="voiceSendBtn" class="retro-btn btn-sm btn-magenta font-orbitron" title="Execute Command"><i class="fa-solid fa-play"></i> EXEC</button>
+                <button id="voiceMicBtn" class="retro-btn btn-sm btn-cyan font-orbitron" title="Speak through microphone"><i class="fa-solid fa-microphone"></i> TALK</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer font-mono">
+            <div class="tech-tags">
+              <span>Python</span><span>SpeechRecognition</span><span>pyttsx3</span><span>Webbrowser</span><span>Datetime</span>
+            </div>
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer" class="source-link" data-sound="click">
+              <i class="fa-brands fa-github"></i> Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: BMI Calculator -->
+        <div class="project-bento-card" data-category="gui">
+          <div class="card-accent-bar cyan"></div>
+          <div class="project-card-header">
+            <div class="badge-row font-mono">
+              <span class="badge-tag">TASK 2</span>
+              <span class="badge-tier">GUI & PERSISTENCE</span>
+            </div>
+            <h3 class="project-title font-orbitron">Cyber BMI Calculator & Visualizer</h3>
+            <p class="project-desc font-mono">
+              Medical health classification tool supporting metric calculations, real-time color-coded health categorization, multi-user profiles, SQLite persistence, and historical trend plotting.
+            </p>
+          </div>
+
+          <div class="feature-checklist font-mono">
+            <div class="check-col">
+              <div class="check-header">Beginner Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Standard formula BMI = w/h²</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> 4 WHO health tiers</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Full input validation</div>
+            </div>
+            <div class="check-col">
+              <div class="check-header">Advanced Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Tkinter / Web visual GUI</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> SQLite profile database</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Matplotlib trend graph</div>
+            </div>
+          </div>
+
+          <!-- Interactive Simulator Container -->
+          <div class="interactive-simulator">
+            <div class="sim-header font-mono">
+              <span><i class="fa-solid fa-heart-pulse"></i> LIVE SIMULATOR · BMI HEALTH MATRIX</span>
+              <span class="sim-status" id="bmiStatus">CALCULATOR READY</span>
+            </div>
+            <div class="sim-body">
+              <div class="bmi-calc-grid font-mono">
+                <div class="bmi-input-group">
+                  <label for="bmiWeight">Weight (kg):</label>
+                  <input type="number" id="bmiWeight" class="retro-input" value="62" min="10" max="300" step="0.5">
+                </div>
+                <div class="bmi-input-group">
+                  <label for="bmiHeight">Height (cm):</label>
+                  <input type="number" id="bmiHeight" class="retro-input" value="168" min="50" max="250">
+                </div>
+              </div>
+
+              <div class="bmi-actions">
+                <button id="calcBmiBtn" class="retro-btn btn-sm btn-cyan font-orbitron w-100"><i class="fa-solid fa-calculator"></i> COMPUTE HEALTH INDEX</button>
+              </div>
+
+              <div class="bmi-result-panel" id="bmiResultPanel">
+                <div class="bmi-score-display">
+                  <span class="bmi-val font-orbitron" id="bmiScoreVal">21.97</span>
+                  <span class="bmi-cat-badge font-mono normal" id="bmiCatBadge">NORMAL WEIGHT (18.5 - 24.9)</span>
+                </div>
+                <!-- Interactive Gauge Bar -->
+                <div class="bmi-gauge">
+                  <div class="gauge-track">
+                    <div class="gauge-segment under">Under</div>
+                    <div class="gauge-segment norm">Normal</div>
+                    <div class="gauge-segment over">Over</div>
+                    <div class="gauge-segment obese">Obese</div>
+                  </div>
+                  <div class="gauge-pointer" id="bmiPointer" style="left: 45%;">▲</div>
+                </div>
+
+                <!-- Mini Trend Visualizer Preview -->
+                <div class="bmi-trend-preview font-mono">
+                  <span><i class="fa-solid fa-chart-line"></i> SQLite History Trend:</span>
+                  <div class="mini-sparkline">
+                    <span style="height: 40%"></span>
+                    <span style="height: 50%"></span>
+                    <span style="height: 48%"></span>
+                    <span style="height: 55%"></span>
+                    <span style="height: 47%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer font-mono">
+            <div class="tech-tags">
+              <span>Python</span><span>Tkinter</span><span>Matplotlib</span><span>SQLite3</span><span>Data Analytics</span>
+            </div>
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer" class="source-link" data-sound="click">
+              <i class="fa-brands fa-github"></i> Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Random Password Generator -->
+        <div class="project-bento-card" data-category="security">
+          <div class="card-accent-bar yellow"></div>
+          <div class="project-card-header">
+            <div class="badge-row font-mono">
+              <span class="badge-tag">TASK 3</span>
+              <span class="badge-tier">CRYPTO SECURITY & GUI</span>
+            </div>
+            <h3 class="project-title font-orbitron">Quantum Password Generator</h3>
+            <p class="project-desc font-mono">
+              Cryptographically secure password synthesizer employing Python's <code>secrets</code> CSPRNG library, real-time entropy evaluation, custom exclusion filters, and automated clipboard synchronization.
+            </p>
+          </div>
+
+          <div class="feature-checklist font-mono">
+            <div class="check-col">
+              <div class="check-header">Beginner Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Min length enforcement (8+)</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> 4 character sets selection</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Multi-generation loop</div>
+            </div>
+            <div class="check-col">
+              <div class="check-header">Advanced Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> <code>secrets</code> CSPRNG engine</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Entropy & strength bar</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Exclude ambiguous chars & copy</div>
+            </div>
+          </div>
+
+          <!-- Interactive Simulator Container -->
+          <div class="interactive-simulator">
+            <div class="sim-header font-mono">
+              <span><i class="fa-solid fa-shield-halved"></i> LIVE SIMULATOR · CSPRNG GENERATOR</span>
+              <span class="sim-status text-yellow" id="passStatus">SECURE</span>
+            </div>
+            <div class="sim-body">
+              <div class="pass-output-box">
+                <input type="text" id="generatedPassword" class="pass-display font-mono" readonly value="8X#k9$mQ2!vL7@pW">
+                <button id="copyPassBtn" class="retro-btn btn-sm btn-yellow font-orbitron" title="Copy to clipboard"><i class="fa-regular fa-copy"></i> COPY</button>
+              </div>
+
+              <!-- Password Strength Bar -->
+              <div class="strength-meter-container font-mono">
+                <div class="meter-text">STRENGTH: <span id="strengthLabel" class="strong-text">VERY STRONG (128-bit)</span></div>
+                <div class="meter-bar-track">
+                  <div class="meter-bar-fill strong" id="strengthBar" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <!-- Options Grid -->
+              <div class="pass-controls font-mono">
+                <div class="slider-row">
+                  <label for="passLengthSlider">Length: <strong id="lengthValue" class="highlight-yellow">16</strong></label>
+                  <input type="range" id="passLengthSlider" min="8" max="32" value="16" class="retro-slider">
+                </div>
+                
+                <div class="checkbox-grid">
+                  <label class="custom-checkbox"><input type="checkbox" id="chkUpper" checked> <span>A-Z (Uppercase)</span></label>
+                  <label class="custom-checkbox"><input type="checkbox" id="chkLower" checked> <span>a-z (Lowercase)</span></label>
+                  <label class="custom-checkbox"><input type="checkbox" id="chkNumbers" checked> <span>0-9 (Numbers)</span></label>
+                  <label class="custom-checkbox"><input type="checkbox" id="chkSymbols" checked> <span>!@#$% (Symbols)</span></label>
+                  <label class="custom-checkbox"><input type="checkbox" id="chkExcludeAmbiguous"> <span>Exclude Ambiguous (0, O, l, 1)</span></label>
+                </div>
+
+                <button id="generatePassBtn" class="retro-btn btn-sm btn-magenta font-orbitron w-100">
+                  <i class="fa-solid fa-dice"></i> GENERATE NEW CSPRNG KEY
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer font-mono">
+            <div class="tech-tags">
+              <span>Python</span><span>secrets CSPRNG</span><span>Tkinter GUI</span><span>pyperclip</span><span>Cybersecurity</span>
+            </div>
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer" class="source-link" data-sound="click">
+              <i class="fa-brands fa-github"></i> Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Basic Weather App -->
+        <div class="project-bento-card" data-category="api">
+          <div class="card-accent-bar purple"></div>
+          <div class="project-card-header">
+            <div class="badge-row font-mono">
+              <span class="badge-tag">TASK 4</span>
+              <span class="badge-tier">REST API & RADAR</span>
+            </div>
+            <h3 class="project-title font-orbitron">Neon Real-Time Weather Station</h3>
+            <p class="project-desc font-mono">
+              Atmospheric meteorological radar fetching live OpenWeather REST API payloads, featuring temperature unit swapping (°C/°F), 6-hour hourly intervals, 5-day forecasts, and IP geolocation.
+            </p>
+          </div>
+
+          <div class="feature-checklist font-mono">
+            <div class="check-col">
+              <div class="check-header">Beginner Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> City / ZIP query</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> JSON API parsing</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Error & timeout handling</div>
+            </div>
+            <div class="check-col">
+              <div class="check-header">Advanced Features:</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Weather icon rendering</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> 6-hr & 5-day forecast cards</div>
+              <div class="check-item"><i class="fa-solid fa-check"></i> Auto IP location & GUI toggle</div>
+            </div>
+          </div>
+
+          <!-- Interactive Simulator Container -->
+          <div class="interactive-simulator">
+            <div class="sim-header font-mono">
+              <span><i class="fa-solid fa-cloud-sun-rain"></i> LIVE SIMULATOR · METEO RADAR</span>
+              <div class="unit-toggle font-mono">
+                <button id="unitCBtn" class="unit-btn active">°C</button>
+                <button id="unitFBtn" class="unit-btn">°F</button>
+              </div>
+            </div>
+            <div class="sim-body">
+              <div class="weather-search-row font-mono">
+                <input type="text" id="weatherCityInput" class="retro-input" value="Lucknow" placeholder="Enter city (e.g. Lucknow, Varanasi, Delhi, London)">
+                <button id="fetchWeatherBtn" class="retro-btn btn-sm btn-purple font-orbitron"><i class="fa-solid fa-satellite"></i> RADAR SCAN</button>
+              </div>
+
+              <!-- Weather Display Card -->
+              <div class="weather-display-card font-mono" id="weatherDisplay">
+                <div class="weather-main-row">
+                  <div class="weather-icon-box">
+                    <i class="fa-solid fa-sun-cloud-rainbow" id="weatherIcon"></i>
+                  </div>
+                  <div class="weather-main-info">
+                    <div class="city-name font-orbitron" id="weatherCityName">LUCKNOW, IN</div>
+                    <div class="weather-desc" id="weatherDesc">Clear Sky & Mild Breeze</div>
+                  </div>
+                  <div class="weather-temp-box font-orbitron" id="weatherTemp">28°C</div>
+                </div>
+
+                <div class="weather-metrics-grid">
+                  <div class="metric-item">
+                    <i class="fa-solid fa-droplet highlight-cyan"></i>
+                    <span>Humidity: <strong id="weatherHumidity">64%</strong></span>
+                  </div>
+                  <div class="metric-item">
+                    <i class="fa-solid fa-wind highlight-yellow"></i>
+                    <span>Wind: <strong id="weatherWind">12 km/h</strong></span>
+                  </div>
+                  <div class="metric-item">
+                    <i class="fa-solid fa-gauge-high highlight-pink"></i>
+                    <span>Pressure: <strong id="weatherPressure">1012 hPa</strong></span>
+                  </div>
+                </div>
+
+                <!-- 3-Day Forecast Strip -->
+                <div class="forecast-strip">
+                  <div class="forecast-day">
+                    <span class="f-day">TOMORROW</span>
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <span class="f-temp" id="fTemp1">29°C</span>
+                  </div>
+                  <div class="forecast-day">
+                    <span class="f-day">WED</span>
+                    <i class="fa-solid fa-sun"></i>
+                    <span class="f-temp" id="fTemp2">31°C</span>
+                  </div>
+                  <div class="forecast-day">
+                    <span class="f-day">THU</span>
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <span class="f-temp" id="fTemp3">27°C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer font-mono">
+            <div class="tech-tags">
+              <span>Python</span><span>OpenWeather API</span><span>Requests</span><span>JSON</span><span>Tkinter/Pillow</span>
+            </div>
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer" class="source-link" data-sound="click">
+              <i class="fa-brands fa-github"></i> Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== GITHUB REPOSITORIES SHOWCASE ==================== -->
+    <section id="github-repos" class="section-block">
+      <div class="section-heading">
+        <div class="heading-flex">
+          <div>
+            <span class="section-sub font-mono">// OPEN SOURCE CODEBASES & ARCHIVES</span>
+            <h2 class="section-title font-orbitron"><i class="fa-brands fa-github highlight-yellow"></i> FEATURED GITHUB REPOSITORIES</h2>
+          </div>
+          <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer" class="retro-btn btn-yellow font-orbitron" data-sound="click">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> VIEW @tiwarianushka242-glitch
+          </a>
+        </div>
+      </div>
+
+      <div class="repos-grid">
+        
+        <!-- Repo 1: Python Internship Projects Portfolio -->
+        <div class="repo-card font-mono" data-sound="hover">
+          <div class="repo-top">
+            <div class="repo-type"><i class="fa-solid fa-folder-open highlight-yellow"></i> PUBLIC REPO</div>
+            <div class="repo-stars"><i class="fa-regular fa-star"></i> Featured</div>
+          </div>
+          <h3 class="repo-name font-orbitron">
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer">Python-Internship-Solutions</a>
+          </h3>
+          <p class="repo-desc">
+            Production repository housing 4 modular Python projects for Oasis Infobyte: SynthVoice assistant, Cyber BMI calculator, Quantum CSPRNG password generator, and real-time Weather API suite.
+          </p>
+          <div class="repo-meta">
+            <span class="lang-tag"><span class="lang-circle py-color"></span> Python</span>
+            <span class="meta-tag"><i class="fa-solid fa-code-branch"></i> main</span>
+            <span class="meta-tag"><i class="fa-solid fa-shield-halved"></i> MIT</span>
+          </div>
+        </div>
+
+        <!-- Repo 2: Data Science & Machine Learning Pipeline -->
+        <div class="repo-card font-mono" data-sound="hover">
+          <div class="repo-top">
+            <div class="repo-type"><i class="fa-solid fa-folder-open highlight-cyan"></i> PUBLIC REPO</div>
+            <div class="repo-stars"><i class="fa-regular fa-star"></i> Featured</div>
+          </div>
+          <h3 class="repo-name font-orbitron">
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer">DataScience-Analytics-Lab</a>
+          </h3>
+          <p class="repo-desc">
+            End-to-end data analytics and predictive modeling pipelines built during Prodigy InfoTech data science fellowship. Includes data cleaning, EDA visualizations, regression, and clustering algorithms.
+          </p>
+          <div class="repo-meta">
+            <span class="lang-tag"><span class="lang-circle jup-color"></span> Jupyter / Python</span>
+            <span class="meta-tag"><i class="fa-solid fa-chart-simple"></i> EDA</span>
+            <span class="meta-tag"><i class="fa-solid fa-brain"></i> Scikit-Learn</span>
+          </div>
+        </div>
+
+        <!-- Repo 3: GenAI Prompt Engineering & Amazon Q Assistant -->
+        <div class="repo-card font-mono" data-sound="hover">
+          <div class="repo-top">
+            <div class="repo-type"><i class="fa-solid fa-folder-open highlight-pink"></i> PUBLIC REPO</div>
+            <div class="repo-stars"><i class="fa-regular fa-star"></i> AI Stack</div>
+          </div>
+          <h3 class="repo-name font-orbitron">
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer">GenAI-AmazonQ-PromptLab</a>
+          </h3>
+          <p class="repo-desc">
+            Generative AI prompt patterns, AWS Amazon Q workflow automations, and LLM reasoning experiments developed in tandem with AWS and HP LIFE AI learning certifications.
+          </p>
+          <div class="repo-meta">
+            <span class="lang-tag"><span class="lang-circle ai-color"></span> AWS / GenAI</span>
+            <span class="meta-tag"><i class="fa-solid fa-cloud"></i> AWS Q</span>
+            <span class="meta-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Prompt Eng</span>
+          </div>
+        </div>
+
+        <!-- Repo 4: C Programming & DSA Core Foundations -->
+        <div class="repo-card font-mono" data-sound="hover">
+          <div class="repo-top">
+            <div class="repo-type"><i class="fa-solid fa-folder-open highlight-purple"></i> PUBLIC REPO</div>
+            <div class="repo-stars"><i class="fa-regular fa-star"></i> IIT-B Certified</div>
+          </div>
+          <h3 class="repo-name font-orbitron">
+            <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer">C-Programming-DSA-Vault</a>
+          </h3>
+          <p class="repo-desc">
+            Low-level algorithms, data structures (linked lists, trees, heaps), memory management, and OOP fundamentals completed through EduPyramids & SINE IIT Bombay training.
+          </p>
+          <div class="repo-meta">
+            <span class="lang-tag"><span class="lang-circle c-color"></span> C / Systems</span>
+            <span class="meta-tag"><i class="fa-solid fa-memory"></i> DSA</span>
+            <span class="meta-tag"><i class="fa-solid fa-award"></i> IIT Bombay</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SKILLS & TECHNICAL STACK ==================== -->
+    <section id="skills" class="section-block">
+      <div class="section-heading">
+        <span class="section-sub font-mono">// TECHNICAL CAPABILITIES</span>
+        <h2 class="section-title font-orbitron"><i class="fa-solid fa-microchip highlight-cyan"></i> SKILLS MATRIX</h2>
+      </div>
+
+      <div class="skills-bento">
+        <!-- Programming & Core -->
+        <div class="skill-category-card">
+          <div class="category-header font-orbitron">
+            <i class="fa-solid fa-code highlight-cyan"></i> LANGUAGES & CORE
+          </div>
+          <div class="skill-meter-list font-mono">
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Python</span><span>92%</span></div>
+              <div class="meter-track"><div class="meter-bar cyan" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>C Programming</span><span>85%</span></div>
+              <div class="meter-track"><div class="meter-bar cyan" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Object-Oriented Programming (OOP)</span><span>90%</span></div>
+              <div class="meter-track"><div class="meter-bar cyan" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Data Structures & Problem Solving</span><span>88%</span></div>
+              <div class="meter-track"><div class="meter-bar cyan" style="width: 88%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI, ML & Data Analytics -->
+        <div class="skill-category-card">
+          <div class="category-header font-orbitron">
+            <i class="fa-solid fa-brain highlight-magenta"></i> AI, ML & DATA ANALYTICS
+          </div>
+          <div class="skill-meter-list font-mono">
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Data Analytics & EDA</span><span>90%</span></div>
+              <div class="meter-track"><div class="meter-bar magenta" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Machine Learning Fundamentals</span><span>84%</span></div>
+              <div class="meter-track"><div class="meter-bar magenta" style="width: 84%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Generative AI & Prompt Engineering</span><span>88%</span></div>
+              <div class="meter-track"><div class="meter-bar magenta" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Data Science Libraries (Pandas, NumPy)</span><span>89%</span></div>
+              <div class="meter-track"><div class="meter-bar magenta" style="width: 89%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud, Tools & Platforms -->
+        <div class="skill-category-card">
+          <div class="category-header font-orbitron">
+            <i class="fa-solid fa-cloud-arrow-up highlight-yellow"></i> CLOUD & DEV TOOLS
+          </div>
+          <div class="skill-meter-list font-mono">
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>AWS Fundamentals & Amazon Q</span><span>82%</span></div>
+              <div class="meter-track"><div class="meter-bar yellow" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Git & GitHub Version Control</span><span>90%</span></div>
+              <div class="meter-track"><div class="meter-bar yellow" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>VS Code & Jupyter Notebooks</span><span>95%</span></div>
+              <div class="meter-track"><div class="meter-bar yellow" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-meter-item">
+              <div class="meter-info"><span>Cyber Security Basics (NIELIT)</span><span>80%</span></div>
+              <div class="meter-track"><div class="meter-bar yellow" style="width: 80%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== CERTIFICATIONS & HONORS ==================== -->
+    <section id="certifications" class="section-block">
+      <div class="section-heading">
+        <span class="section-sub font-mono">// VERIFIED CREDENTIALS</span>
+        <h2 class="section-title font-orbitron"><i class="fa-solid fa-award highlight-yellow"></i> CERTIFICATIONS & LICENSES</h2>
+      </div>
+
+      <div class="cert-grid">
+        
+        <!-- Cert 1 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon gold"><i class="fa-solid fa-medal"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">NPTEL · IIT MADRAS</span>
+            <h4 class="cert-name font-orbitron">Python for Data Science</h4>
+            <span class="cert-grade font-mono"><i class="fa-solid fa-star"></i> Elite Certification</span>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon purple"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">HP LIFE</span>
+            <h4 class="cert-name font-orbitron">AI for Business Professionals</h4>
+            <span class="cert-grade font-mono">Artificial Intelligence & Business Strategy</span>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon cyan"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">HP LIFE</span>
+            <h4 class="cert-name font-orbitron">Data Science & Analytics</h4>
+            <span class="cert-grade font-mono">Data Modeling & Statistical Analytics</span>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon orange"><i class="fa-brands fa-aws"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">AMAZON WEB SERVICES (AWS)</span>
+            <h4 class="cert-name font-orbitron">Amazon Q Learning Plan</h4>
+            <span class="cert-grade font-mono">Generative AI Assistant on AWS</span>
+          </div>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon magenta"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">NOVITECH</span>
+            <h4 class="cert-name font-orbitron">Data Analytics MasterClass</h4>
+            <span class="cert-grade font-mono">Industry Data Analytics & BI</span>
+          </div>
+        </div>
+
+        <!-- Cert 6 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon cyan"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">NOVITECH</span>
+            <h4 class="cert-name font-orbitron">Full Stack Development MasterClass</h4>
+            <span class="cert-grade font-mono">Full Stack Engineering Workflow</span>
+          </div>
+        </div>
+
+        <!-- Cert 7 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon gold"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">EDUPYRAMIDS / SINE IIT BOMBAY</span>
+            <h4 class="cert-name font-orbitron">C Programming Certification</h4>
+            <span class="cert-grade font-mono">Core Systems & Memory Architecture</span>
+          </div>
+        </div>
+
+        <!-- Cert 8 -->
+        <div class="cert-card font-mono" data-sound="hover">
+          <div class="cert-badge-icon red"><i class="fa-solid fa-user-shield"></i></div>
+          <div class="cert-info">
+            <span class="cert-issuer">NIELIT & NCC</span>
+            <h4 class="cert-name font-orbitron">Basic Cyber Course</h4>
+            <span class="cert-grade font-mono">Cybersecurity Defense & Protocol</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== INTERACTIVE CONTACT & RETRO CLI ==================== -->
+    <section id="contact" class="section-block">
+      <div class="section-heading">
+        <span class="section-sub font-mono">// TRANSMISSION LINK</span>
+        <h2 class="section-title font-orbitron"><i class="fa-solid fa-satellite-dish highlight-pink"></i> COMMS & TRANSMISSION</h2>
+      </div>
+
+      <div class="bento-2col">
+        
+        <!-- Contact Form Card -->
+        <div class="retro-card">
+          <div class="card-header font-orbitron">
+            <i class="fa-solid fa-paper-plane highlight-cyan"></i> SEND ENCRYPTED MESSAGE
+          </div>
+          <form id="contactForm" class="contact-form font-mono">
+            <div class="form-group">
+              <label for="contactName"><i class="fa-solid fa-user"></i> SENDER NAME:</label>
+              <input type="text" id="contactName" class="retro-input" placeholder="e.g. Hiring Manager / Recruiter" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail"><i class="fa-solid fa-envelope"></i> RETURN EMAIL:</label>
+              <input type="email" id="contactEmail" class="retro-input" placeholder="e.g. recruiter@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject"><i class="fa-solid fa-tag"></i> SUBJECT:</label>
+              <input type="text" id="contactSubject" class="retro-input" placeholder="e.g. Python / AI Internship Opportunity" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMsg"><i class="fa-solid fa-message"></i> TRANSMISSION CONTENT:</label>
+              <textarea id="contactMsg" rows="4" class="retro-input" placeholder="Hello Anushka, we would love to discuss a developer / data science internship opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="retro-btn btn-magenta font-orbitron w-100" data-sound="click">
+              <i class="fa-solid fa-tower-broadcast"></i> TRANSMIT PACKET
+            </button>
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+        </div>
+
+        <!-- Interactive 80s Retro Command Terminal -->
+        <div class="retro-card cli-terminal-card">
+          <div class="cli-top-bar font-mono">
+            <span class="cli-buttons"><i></i><i></i><i></i></span>
+            <span class="cli-title">ANUSHKA_CLI // COMMAND PROMPT</span>
+            <span class="cli-help-tip font-mono">Type 'help'</span>
+          </div>
+
+          <div class="cli-screen font-mono" id="cliScreen">
+            <div class="cli-line sys">&gt;&gt; WELCOME TO ANUSHKA TIWARI'S 80s MAINFRAME TERMINAL [v1986.8]</div>
+            <div class="cli-line sys">&gt;&gt; Type commands: <span class="cmd-highlight">help</span>, <span class="cmd-highlight">projects</span>, <span class="cmd-highlight">skills</span>, <span class="cmd-highlight">internships</span>, <span class="cmd-highlight">resume</span>, <span class="cmd-highlight">matrix</span>, <span class="cmd-highlight">clear</span></div>
+            <div class="cli-line info">&gt;&gt; System Ready. Waiting for keyboard input...</div>
+          </div>
+
+          <div class="cli-input-line font-mono">
+            <span class="cli-prompt">guest@anushka-os:~$</span>
+            <input type="text" id="cliInput" class="cli-input" placeholder="Type a command (e.g., 'projects')..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== COMPACT FOOTER ==================== -->
+  <footer class="retro-footer font-mono">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo font-orbitron">ANUSHKA TIWARI</div>
+        <p class="footer-tagline">AI & ML Undergraduate · Data Science & Cloud Enthusiast · AKTU University</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/tiwarianushka242-glitch" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://leetcode.com/u/9696anusHka-23" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> LeetCode</a>
+        <a href="https://hackerrank.com/profile/tiwarianushka242" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-hackerrank"></i> HackerRank</a>
+        <a href="mailto:tiwarianushka242@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      </div>
+
+      <div class="footer-right">
+        <span>© 1986-2026 ANUSHKA TIWARI. ALL RIGHTS RESERVED.</span>
+        <span class="synth-made"><i class="fa-solid fa-bolt highlight-yellow"></i> ENGINEERED WITH 80s SYNTHWAVE VIBES</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==================== MODAL: INTERACTIVE RESUME VIEWER ==================== -->
+  <div class="retro-modal" id="resumeModal" aria-hidden="true">
+    <div class="modal-backdrop" id="resumeBackdrop"></div>
+    <div class="modal-dialog font-mono">
+      <div class="modal-header font-orbitron">
+        <div class="modal-title"><i class="fa-solid fa-file-lines highlight-cyan"></i> OFFICIAL CURRICULUM VITAE · ANUSHKA TIWARI</div>
+        <button class="modal-close" id="closeResumeBtn" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="resume-sheet">
+          <div class="resume-header-block">
+            <h2 class="font-orbitron">ANUSHKA TIWARI</h2>
+            <p class="r-subtitle">AI & ML Undergraduate | Data Analytics | Cloud & AI Enthusiast</p>
+            <div class="r-contact-row">
+              <span><i class="fa-solid fa-location-dot"></i> Lucknow, UP</span> · 
+              <span><i class="fa-solid fa-phone"></i> +91 9696489045</span> · 
+              <span><i class="fa-solid fa-envelope"></i> tiwarianushka242@gmail.com</span>
+            </div>
+            <div class="r-profiles">
+              <a href="https://github.com/tiwarianushka242-glitch" target="_blank">github.com/tiwarianushka242-glitch</a> | 
+              <a href="https://leetcode.com/u/9696anusHka-23" target="_blank">leetcode.com/u/9696anusHka-23</a> | 
+              <a href="https://hackerrank.com/profile/tiwarianushka242" target="_blank">hackerrank.com/profile/tiwarianushka242</a>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="r-sec-title font-orbitron">PROFILE</h3>
+            <p>Motivated B.Tech student specializing in Artificial Intelligence & Machine Learning with knowledge of Python, Data Analytics, Cloud Computing, and Generative AI. Passionate about leveraging data-driven solutions to solve real-world problems and eager to gain industry experience through internships.</p>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="r-sec-title font-orbitron">EDUCATION</h3>
+            <ul>
+              <li><strong>B.Tech (AI & ML)</strong>, Ambalika Institute of Management & Technology, AKTU University (2024–2028)</li>
+              <li><strong>Class XII (CBSE)</strong>, Gandhi Memorial School, Varanasi (2023)</li>
+              <li><strong>Class X (CBSE)</strong>, St. Joseph's High School (2021)</li>
+            </ul>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="r-sec-title font-orbitron">INTERNSHIPS</h3>
+            <ul>
+              <li><strong>Oasis Infobyte</strong> – Python Programming Intern (Aug 2026): Developed modular desktop AI voice assistant, BMI health computing engine, quantum CSPRNG password tool, and weather radar app.</li>
+              <li><strong>Prodigy InfoTech</strong> – Data Science Intern (Aug 2026): Executed data cleaning, EDA, feature engineering, and predictive ML modeling pipelines.</li>
+            </ul>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="r-sec-title font-orbitron">TECHNICAL SKILLS</h3>
+            <p><strong>Languages:</strong> Python, C | <strong>Data & AI:</strong> Data Analytics, Machine Learning Basics, Data Science Fundamentals, Generative AI, Prompt Engineering | <strong>Cloud & Tools:</strong> AWS Fundamentals, Amazon Q, Git, GitHub, VS Code, OOP, Problem Solving</p>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="r-sec-title font-orbitron">CERTIFICATIONS</h3>
+            <p>• NPTEL IIT Madras – Python for Data Science (Elite) • HP LIFE – AI for Business Professionals • HP LIFE – Data Science & Analytics • AWS – Amazon Q Learning Plan • NoviTech – Data Analytics MasterClass • NoviTech – Full Stack Development MasterClass • EduPyramids/SINE IIT Bombay – C Programming • NIELIT & NCC – Basic Cyber Course</p>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="r-sec-title font-orbitron">LEADERSHIP & ACTIVITIES</h3>
+            <p>• National Cadet Corps (NCC) • National Service Scheme (NSS) • Leadership, Teamwork, Discipline, Public Speaking</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="printResumeBtn" class="retro-btn btn-magenta font-orbitron"><i class="fa-solid fa-print"></i> PRINT / SAVE PDF</button>
+        <a href="mailto:tiwarianushka242@gmail.com?subject=Interview%20Invitation%20for%20Anushka%20Tiwari" class="retro-btn btn-cyan font-orbitron"><i class="fa-solid fa-envelope"></i> CONTACT FOR HIRE</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
